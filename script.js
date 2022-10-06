@@ -126,7 +126,7 @@ function getRandomArbitrary(min, max) {
 
 function getHtmlCodeCard(nomCard, id){
     return `<div class="card hidden" id="${id}" data-image="${nomCard}">
-                <img src="../img/${nomCard}.png" />
+                <img src="./img/${nomCard}.png" />
             </div>`;
 }
 
