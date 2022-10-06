@@ -1,9 +1,7 @@
 #GameBoard{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-  /*  max-width: 700px;
-    margin:auto;
-    height: 100vh;*/
+    
 }
 .card{
     margin: 10px;
@@ -25,7 +23,7 @@
 }
 .card.hidden{
     transform: rotateY(180deg);
-    background-image: url("./img/back.jpg");
+    background-image: url("./img/back.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
