@@ -23,7 +23,7 @@
 }
 .card.hidden{
     transform: rotateY(180deg);
-    background-image: url("./img/back.png");
+    background-image: url("../img/back.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
