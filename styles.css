@@ -1,0 +1,155 @@
+#GameBoard{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  /*  max-width: 700px;
+    margin:auto;
+    height: 100vh;*/
+}
+.card{
+    margin: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card:hover{
+   cursor:pointer;
+}
+.card img{
+    margin: 0;
+}
+.card.hidden img{
+    visibility: hidden;
+}
+.card.hidden{
+    transform: rotateY(180deg);
+    background-image: url("/img/back.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card.finded{
+    border: double 8px green;
+    opacity: 0.5;
+}
+
+body{
+    height: 100vh;
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+.confetti{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: falling 5s infinite;
+    position:absolute;
+    top:-20px;
+    z-index: 2;
+}
+
+@keyframes falling{
+    0%{
+        top:-20px;
+        transform: rotate(180deg);
+    }
+    20% {
+        transform: translateX(100px) rotate(360deg);
+    }
+    40%{
+        transform: translateX(40px) rotate(180deg);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(20px) rotate(360deg);
+    }
+    70%{
+        opacity: 0.2;
+        transform: translateX(30px) rotate(180deg); 
+    }
+    100%{
+        opacity: 0;
+        top:100%;
+        transform: translateX(20px) rotate(360deg);
+    }
+}
+/*ajout perso styles bnt*/
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(101, 254, 90);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10% 30% 10% 30%;
+    background-color: rgb(35, 108, 27);
+    background-image: linear-gradient(to top left,
+                        rgba(89, 218, 46, 0.2),
+                        rgba(22, 255, 45, 0.3) 40%,
+                        rgba(162, 255, 162, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .7);
+}
+
+.styled:hover {
+    background-color: rgb(255, 240, 27);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+h1{
+    color: greenyellow ;
+    text-align: center;
+    border: double 5px black;
+    border-radius: 0%  0% 40% 40%;
+    background-image: linear-gradient(to top left,
+                        rgba(89, 218, 46, 0.2),
+                        rgba(22, 255, 45, 0.3) 40%,
+                        rgba(162, 255, 162, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .7);
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*SCROLL*/
+
+.scroller {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: rgb(153, 75, 51) rgb(60, 249, 255);
+    scrollbar-width: auto;
+  }
+  
+.choix{
+    color: chartreuse;
+    margin-top: -70px;
+}
+p{
+    color: greenyellow ;
+  /*  text-align: center;
+    border: double 5px black;
+    border-radius: 0%  0% 40% 40%;
+    background-image: linear-gradient(to top left,
+                        rgba(89, 218, 46, 0.2),
+                        rgba(22, 255, 45, 0.3) 40%,
+                        rgba(162, 255, 162, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .7);*/
+}
