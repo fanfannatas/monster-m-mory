@@ -12,7 +12,7 @@ let jeuTableau;
 
 let cptClickCurrent = 0;
 let CardClickedId;
-const cards = ["king", "queen", "valet", "as", "kingpiq", "kingtrefle", "jojo","tetecorn", "tetecapuch"];
+const cards = ["king", "queen", "valet", "as", "kingPiq", "kingtrefle", "jojo","corn", "capuch"];
 const gameBoard = document.getElementById("GameBoard");
 let nbPairesOnGame;
 let cptCartesTrouvees = 0;
@@ -126,7 +126,7 @@ function getRandomArbitrary(min, max) {
 
 function getHtmlCodeCard(nomCard, id){
     return `<div class="card hidden" id="${id}" data-image="${nomCard}">
-                <img src="/img/${nomCard}.png" />
+                <img src="./img/${nomCard}.png" />
             </div>`;
 }
 

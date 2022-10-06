@@ -15,7 +15,7 @@
     height: 100%;
 }
 .card:hover{
-   cursor:pointer;
+    cursor:pointer;
 }
 .card img{
     margin: 0;
@@ -25,7 +25,7 @@
 }
 .card.hidden{
     transform: rotateY(180deg);
-    background-image: url("/img/back.jpg");
+    background-image: url("./img/back.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
