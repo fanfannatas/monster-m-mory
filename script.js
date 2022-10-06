@@ -12,7 +12,7 @@ let jeuTableau;
 
 let cptClickCurrent = 0;
 let CardClickedId;
-const cards = ["king", "queen", "valet", "as", "kingPiq", "kingtrefle", "jojo","corn", "capuch"];
+const cards = ["king", "queen", "valet", "as", "kingPiq", "kingtrefle", "jojo", "corn", "capuch"];
 const gameBoard = document.getElementById("GameBoard");
 let nbPairesOnGame;
 let cptCartesTrouvees = 0;
@@ -158,12 +158,12 @@ var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
 // Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
+//function myFunction() {
+//  if (video.paused) {
     video.play();
     btn.innerHTML = "Pause";
-  } else {
+//  } else {
     video.pause();
     btn.innerHTML = "Play";
-  }
-}
+//  }
+//}
